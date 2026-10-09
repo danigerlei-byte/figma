@@ -1,0 +1,25 @@
+Category,Item ID,Checklist Item,Requirement / Standard,Importance,Figma Feature
+Auto Layout,AL-01,No Hardcoded Floating Layers,Every responsive component and frame must use Auto Layout instead of manual coordinates.,Critical,Auto Layout (Shift+A)
+Auto Layout,AL-02,Proper Resizing Constraints,Top containers set to 'Fill container' or 'Hug contents'; no unintended 'Fixed' sizes on responsive wrappers.,Critical,Resizing Settings
+Auto Layout,AL-03,Min & Max Constraints Defined,Cards and dialog components have min-width and max-width set to prevent crushing or blowing out.,High,Min/Max Dimensions
+Auto Layout,AL-04,Negative Spacing for Avatars & Badges,Avatar stacks and badge overlays use explicit negative spacing instead of manual absolute positioning where applicable.,Medium,Auto Layout Gap
+Auto Layout,AL-05,Wrap Property on Tag Groups,Filter pills and chip lists leverage Auto Layout 'Wrap' for graceful multi-line wrapping.,High,Auto Layout Wrap
+Tokens & Variables,TK-01,Zero Detached Hex Colors,Every fill stroke and text color is mapped to a Figma Variable or Color Style.,Critical,Color Variables
+Tokens & Variables,TK-02,Semantic Color Aliasing,Raw colors (e.g. blue-500) aliased to semantic tokens (e.g. surface-interactive-primary).,High,Variable Aliasing
+Tokens & Variables,TK-03,Dark Mode Variable Collection,Variables configured with Light & Dark modes to enable 1-click theme switching.,High,Variable Modes
+Tokens & Variables,TK-04,8pt / 4pt Spacing Variables,Paddings and gaps bind to spacing tokens (space-4, space-8, space-16, space-24).,Critical,Number Variables
+Tokens & Variables,TK-05,Radius Variables,Corner radiuses linked to token scales (radius-sm, radius-md, radius-lg, radius-full).,Medium,Number Variables
+Typography,TY-01,Complete Type Hierarchy,Type styles defined for Display, H1-H4, Body (Regular/Medium/Bold), and Caption.,High,Text Styles
+Typography,TY-02,Standardized Line Heights,% or proportional line-heights applied to prevent clipping in localized translations.,High,Typography Settings
+Typography,TY-03,Auto-Height Text Layers,Text layers set to 'Auto height' or 'Fill container' so translated strings never overflow secretly.,Critical,Text Resizing
+Components & Variants,CP-01,Clean Component Naming,Consistent hierarchy using Component/Subcategory/Name (e.g. Button/Primary/Large).,High,Component Sets
+CP-02,Property-Driven Variants,Variants utilize Boolean, Instance Swap, and Text properties instead of massive combinatorial trees.,Critical,Component Properties
+CP-03,Interactive States Covered,Interactive components contain Default, Hover, Pressed, Focused, and Disabled variants.,Critical,Interactive Components
+CP-04,Slot Pattern for Cards/Modals,Complex components implement placeholder instance swap slots for flexible layout composition.,High,Instance Swap Property
+Accessibility (WCAG),A11Y-01,Contrast Ratio >= 4.5:1,Normal text meets WCAG AA contrast ratio (4.5:1 against surface background).,Critical,Stark / Contrast Check
+Accessibility (WCAG),A11Y-02,Visible Focus Indicators,All interactive controls contain high-contrast (3:1+) keyboard focus rings.,Critical,Focus Ring Variant
+Accessibility (WCAG),A11Y-03,Touch Target Size >= 44x44px,Mobile click targets have at least 44x44px bounding box or padded frame.,High,Layout Bounds
+Developer Handoff,DEV-01,Dev Mode Ready Annotations,Measure specs and interaction notes added in Figma Dev Mode.,High,Dev Mode Annotations
+Developer Handoff,DEV-02,Clean Layer Hierarchy & Naming,No 'Frame 10294' or 'Group 42'. Descriptive names (e.g. 'CardHeader', 'ActionGroup').,High,Layer Naming
+Developer Handoff,DEV-03,Vector Icon Export Settings,Icons flattened, strokes outlined if necessary, with 24x24px bounding boxes.,Critical,Export Settings
+Developer Handoff,DEV-04,Design Token Parity,Token names in Figma 100% match CSS/Tailwind variable names in the codebase.,Critical,Tokens Studio

@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Ultimate Figma Production Kit & Design System Architect (2026 Edition)</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Top Scroll Progress Bar -->
+  <div id="scrollProgressBar"></div>
+
+  <!-- Ambient Floating Glow Blobs -->
+  <div class="ambient-blobs-layer">
+    <div class="ambient-blob blob-1"></div>
+    <div class="ambient-blob blob-2"></div>
+    <div class="ambient-blob blob-3"></div>
+  </div>
+
+  <!-- Subtle Figma Canvas Dot Grid -->
+  <div class="figma-grid-pattern"></div>
+
+  <!-- Sticky Navbar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand">
+        <svg class="brand-logo-svg" viewBox="0 0 38 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19 28.5C19 23.2533 23.2533 19 28.5 19C33.7467 19 38 23.2533 38 28.5C38 33.7467 33.7467 38 28.5 38C23.2533 38 19 33.7467 19 28.5Z" fill="#1ABCFE"/>
+          <path d="M0 47.5C0 42.2533 4.25329 38 9.5 38H19V47.5C19 52.7467 14.7467 57 9.5 57C4.25329 57 0 52.7467 0 47.5Z" fill="#0ACF83"/>
+          <path d="M19 0V19H28.5C33.7467 19 38 14.7467 38 9.5C38 4.25329 33.7467 0 28.5 0H19Z" fill="#FF7262"/>
+          <path d="M0 9.5C0 14.7467 4.25329 19 9.5 19H19V0H9.5C4.25329 0 0 4.25329 0 9.5Z" fill="#F24E1E"/>
+          <path d="M0 28.5C0 33.7467 4.25329 38 9.5 38H19V19H9.5C4.25329 19 0 23.2533 0 28.5Z" fill="#A259FF"/>
+        </svg>
+        <span class="brand-text">Figma <span class="brand-sub">Master Kit</span></span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#client-logos" class="nav-link">Partners</a></li>
+        <li><a href="#whats-inside" class="nav-link">What's Inside</a></li>
+        <li><a href="#live-playground" class="nav-link">Interactive Preview</a></li>
+        <li><a href="#comparison" class="nav-link">Why This Kit</a></li>
+        <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+        <li><a href="#faq" class="nav-link">FAQ</a></li>
+      </ul>
+
+      <a href="#get-kit" class="nav-cta">Claim Free Kit</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="get-kit">
+    <div class="container">
+      <div class="hero-pill reveal-on-scroll">
+        <span>✨ 2026 EDITION • <span class="stat-counter" data-target="42000" data-suffix="+">42,000+</span> DESIGNERS & ENGINEERS ENROLLED</span>
+      </div>
+
+      <h1 class="hero-title reveal-on-scroll stagger-1">
+        Design 10x Faster.<br>
+        <span class="gradient-text">Zero Handoff Chaos.</span>
+      </h1>
+
+      <p class="hero-subtitle reveal-on-scroll stagger-2">
+        Stop rebuilding components from scratch. Get the battle-tested <strong>Figma Production Architect Kit & Lead Magnet</strong>: 60-point live audit matrix, interactive design token exporter, and Auto Layout cheatsheets.
+      </p>
+
+      <!-- Primary Email Capture Form -->
+      <div class="hero-form-wrapper reveal-on-scroll stagger-3">
+        <form class="lead-capture-form" id="heroLeadForm">
+          <input 
+            type="email" 
+            class="lead-input" 
+            placeholder="Enter your work email (e.g. alex@stripe.com)" 
+            required
+            aria-label="Work Email Address"
+          >
+          <button type="submit" class="lead-btn">
+            <span>Get Free Instant Access</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14"></path>
+              <path d="M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </form>
+      </div>
+
+      <div class="form-trust-notes reveal-on-scroll stagger-3">
+        <span class="trust-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--figma-green)" stroke-width="3">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+          Instant .ZIP & Web Access
+        </span>
+        <span class="trust-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--figma-green)" stroke-width="3">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+          100% Free Forever
+        </span>
+        <span class="trust-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--figma-green)" stroke-width="3">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+          Zero Spam Guarantee
+        </span>
+      </div>
+
+      <!-- Social Proof Strip -->
+      <div class="social-proof-strip reveal-on-scroll stagger-4">
+        <div class="avatar-group">
+          <div class="avatar-bubble" style="background-color: #A259FF;">JD</div>
+          <div class="avatar-bubble" style="background-color: #1ABCFE;">SK</div>
+          <div class="avatar-bubble" style="background-color: #0ACF83;">AL</div>
+          <div class="avatar-bubble" style="background-color: #FF7262;">MC</div>
+        </div>
+        <div class="stars-rating">
+          ★★★★★
+        </div>
+        <div class="social-text">
+          Rated <strong>4.9/5</strong> by designers at <strong>Airbnb, Spotify, Stripe, and Google</strong>
+        </div>
+      </div>
+
+      <!-- Interactive Canvas Mockup with Motion Graphics -->
+      <div class="hero-canvas-wrapper reveal-on-scroll stagger-4">
+        <div class="canvas-frame tilt-card">
+          <!-- Animated Laser Scanline -->
+          <div class="canvas-scanline"></div>
+
+          <!-- Floating Stickers -->
+          <div class="floating-sticker sticker-1">Shift + A (Auto Layout)</div>
+          <div class="floating-sticker sticker-2">Tokens Studio &bull; W3C</div>
+          <div class="floating-sticker sticker-3">WCAG AA &bull; 8.2:1</div>
+
+          <!-- Figma Chrome Toolbar -->
+          <div class="canvas-toolbar">
+            <div class="canvas-dots">
+              <div class="canvas-dot dot-red"></div>
+              <div class="canvas-dot dot-yellow"></div>
+              <div class="canvas-dot dot-green"></div>
+            </div>
+            <div class="canvas-file-name">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+              </svg>
+              <span>Production_Design_System_v2.6.fig</span>
+            </div>
+            <div class="dev-mode-pill">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+              Dev Mode On
+            </div>
+          </div>
+
+          <!-- Figma Canvas Body -->
+          <div class="canvas-body">
+            <!-- Simulated Multiplayer Cursors -->
+            <div class="figma-cursor cursor-dani">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="#A259FF">
+                <path d="M5.5 2.5L19.5 13.5L11.5 14.5L7.5 21.5L5.5 2.5Z"></path>
+              </svg>
+              <span class="cursor-tag">Dani (Design Lead)</span>
+            </div>
+
+            <div class="figma-cursor cursor-sarah">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="#0ACF83">
+                <path d="M5.5 2.5L19.5 13.5L11.5 14.5L7.5 21.5L5.5 2.5Z"></path>
+              </svg>
+              <span class="cursor-tag">Sarah (Staff Frontend)</span>
+            </div>
+
+            <div class="figma-cursor cursor-alex">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="#1ABCFE">
+                <path d="M5.5 2.5L19.5 13.5L11.5 14.5L7.5 21.5L5.5 2.5Z"></path>
+              </svg>
+              <span class="cursor-tag">Alex (Product Mgr)</span>
+            </div>
+
+            <!-- Inspect Card Component -->
+            <div class="canvas-component-card">
+              <div class="canvas-selection-box">
+                <div class="selection-handle handle-tl"></div>
+                <div class="selection-handle handle-tr"></div>
+                <div class="selection-handle handle-bl"></div>
+                <div class="selection-handle handle-br"></div>
+                <div class="inspect-badge">Auto Layout (Fill • 16px Padding)</div>
+              </div>
+
+              <div class="card-header-sim">
+                <div class="card-avatar-sim">⚡</div>
+                <div>
+                  <div class="card-title-sim">PrimaryActionCard.variant</div>
+                  <div class="card-desc-sim">Linked to <code>tokens/surface-primary</code></div>
+                </div>
+              </div>
+
+              <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.5;">
+                Fully responsive component instance with min-width constraints, interactive hover variants, and zero manual coordinates.
+              </p>
+
+              <div class="token-pill-row">
+                <span class="token-pill">Hug H • Fill W</span>
+                <span class="token-pill">gap: 16px</span>
+                <span class="token-pill">radius: 12px</span>
+                <span class="token-pill" style="color: var(--figma-purple)">WCAG AAA: 8.2:1</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PAST CLIENT LOGOS INFINITE MOVING CAROUSEL
+       ========================================================================== -->
+  <section class="client-logos-section reveal-on-scroll" id="client-logos">
+    <div class="client-logos-header">
+      <p>TRUSTED BY DESIGN & ENGINEERING TEAMS AT WORLD-CLASS PRODUCT COMPANIES</p>
+    </div>
+
+    <!-- Marquee Track 1 (Left to Right) -->
+    <div class="marquee-wrapper">
+      <div class="marquee-track">
+        <!-- Set 1 -->
+        <div class="marquee-group">
+          <!-- Google -->
+          <div class="client-logo-item" title="Google">
+            <svg viewBox="0 0 24 24">
+              <path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/>
+            </svg>
+            <span class="client-logo-name">Google</span>
+          </div>
+
+          <!-- Stripe -->
+          <div class="client-logo-item" title="Stripe">
+            <svg viewBox="0 0 40 24">
+              <path d="M13.9 8.2c0-1.2 1-1.6 2.5-1.6 2.2 0 4.9.7 7.1 1.9V2.9C21.1 2 18.5 1.5 16.1 1.5c-6.1 0-10.2 3.2-10.2 8.6 0 8.4 11.5 7.1 11.5 10.7 0 1.4-1.2 1.8-2.9 1.8-2.5 0-5.7-1-8.1-2.4v5.7c2.7 1.2 5.5 1.7 8.1 1.7 6.4 0 10.7-3.1 10.7-8.7-.1-9.1-11.3-7.5-11.3-10.9z"/>
+            </svg>
+            <span class="client-logo-name">Stripe</span>
+          </div>
+
+          <!-- Airbnb -->
+          <div class="client-logo-item" title="Airbnb">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 0c-3.6 0-6.1 2.3-6.1 5.9 0 4.2 3.8 8.6 6.1 11.8 2.3-3.2 6.1-7.6 6.1-11.8C18.1 2.3 15.6 0 12 0zm0 8.4c-1.3 0-2.4-1.1-2.4-2.4S10.7 3.6 12 3.6s2.4 1.1 2.4 2.4-1.1 2.4-2.4 2.4z"/>
+            </svg>
+            <span class="client-logo-name">Airbnb</span>
+          </div>
+
+          <!-- Spotify -->
+          <div class="client-logo-item" title="Spotify">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zm5.5 17.3c-.2.4-.7.5-1.1.3-3-1.8-6.8-2.2-11.3-1.2-.5.1-.9-.2-1-.7-.1-.5.2-.9.7-1 4.9-1.1 9.1-.6 12.4 1.4.4.3.5.8.3 1.2zm1.5-3.3c-.3.4-.9.6-1.4.3-3.5-2.1-8.7-2.7-12.8-1.5-.5.2-1.1-.1-1.2-.6-.2-.5.1-1.1.6-1.2 4.7-1.4 10.5-.7 14.5 1.7.5.3.6.9.3 1.3zm.1-3.4c-4.1-2.5-11-2.7-14.9-1.5-.6.2-1.3-.1-1.5-.8-.2-.6.1-1.3.8-1.5 4.6-1.4 12.1-1.1 16.9 1.7.6.3.8 1.1.4 1.7-.3.5-1.1.7-1.7.4z"/>
+            </svg>
+            <span class="client-logo-name">Spotify</span>
+          </div>
+
+          <!-- Linear -->
+          <div class="client-logo-item" title="Linear">
+            <svg viewBox="0 0 24 24">
+              <path d="M3.2 18.8L18.8 3.2c-3.5-2.6-8.5-2.3-11.6.8-3.1 3.1-3.4 8.1-.8 11.6zm-1.1-3.6c-.6-3.8.7-7.7 3.4-10.4 2.7-2.7 6.6-4 10.4-3.4L2.1 15.2zm20.8-6.4L7.2 24.4c3.5 2.6 8.5 2.3 11.6-.8 3.1-3.1 3.4-8.1.8-11.6zm1.1 3.6c.6 3.8-.7 7.7-3.4 10.4-2.7 2.7-6.6 4-10.4 3.4L24 12.4z"/>
+            </svg>
+            <span class="client-logo-name">Linear</span>
+          </div>
+
+          <!-- Vercel -->
+          <div class="client-logo-item" title="Vercel">
+            <svg viewBox="0 0 24 24">
+              <path d="M24 22.525H0l12-21.05 12 21.05z"/>
+            </svg>
+            <span class="client-logo-name">Vercel</span>
+          </div>
+        </div>
+
+        <!-- Set 2 (Exact Duplicate for Seamless Infinite Loop) -->
+        <div class="marquee-group">
+          <div class="client-logo-item" title="Google">
+            <svg viewBox="0 0 24 24">
+              <path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/>
+            </svg>
+            <span class="client-logo-name">Google</span>
+          </div>
+
+          <div class="client-logo-item" title="Stripe">
+            <svg viewBox="0 0 40 24">
+              <path d="M13.9 8.2c0-1.2 1-1.6 2.5-1.6 2.2 0 4.9.7 7.1 1.9V2.9C21.1 2 18.5 1.5 16.1 1.5c-6.1 0-10.2 3.2-10.2 8.6 0 8.4 11.5 7.1 11.5 10.7 0 1.4-1.2 1.8-2.9 1.8-2.5 0-5.7-1-8.1-2.4v5.7c2.7 1.2 5.5 1.7 8.1 1.7 6.4 0 10.7-3.1 10.7-8.7-.1-9.1-11.3-7.5-11.3-10.9z"/>
+            </svg>
+            <span class="client-logo-name">Stripe</span>
+          </div>
+
+          <div class="client-logo-item" title="Airbnb">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 0c-3.6 0-6.1 2.3-6.1 5.9 0 4.2 3.8 8.6 6.1 11.8 2.3-3.2 6.1-7.6 6.1-11.8C18.1 2.3 15.6 0 12 0zm0 8.4c-1.3 0-2.4-1.1-2.4-2.4S10.7 3.6 12 3.6s2.4 1.1 2.4 2.4-1.1 2.4-2.4 2.4z"/>
+            </svg>
+            <span class="client-logo-name">Airbnb</span>
+          </div>
+
+          <div class="client-logo-item" title="Spotify">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zm5.5 17.3c-.2.4-.7.5-1.1.3-3-1.8-6.8-2.2-11.3-1.2-.5.1-.9-.2-1-.7-.1-.5.2-.9.7-1 4.9-1.1 9.1-.6 12.4 1.4.4.3.5.8.3 1.2zm1.5-3.3c-.3.4-.9.6-1.4.3-3.5-2.1-8.7-2.7-12.8-1.5-.5.2-1.1-.1-1.2-.6-.2-.5.1-1.1.6-1.2 4.7-1.4 10.5-.7 14.5 1.7.5.3.6.9.3 1.3zm.1-3.4c-4.1-2.5-11-2.7-14.9-1.5-.6.2-1.3-.1-1.5-.8-.2-.6.1-1.3.8-1.5 4.6-1.4 12.1-1.1 16.9 1.7.6.3.8 1.1.4 1.7-.3.5-1.1.7-1.7.4z"/>
+            </svg>
+            <span class="client-logo-name">Spotify</span>
+          </div>
+
+          <div class="client-logo-item" title="Linear">
+            <svg viewBox="0 0 24 24">
+              <path d="M3.2 18.8L18.8 3.2c-3.5-2.6-8.5-2.3-11.6.8-3.1 3.1-3.4 8.1-.8 11.6zm-1.1-3.6c-.6-3.8.7-7.7 3.4-10.4 2.7-2.7 6.6-4 10.4-3.4L2.1 15.2zm20.8-6.4L7.2 24.4c3.5 2.6 8.5 2.3 11.6-.8 3.1-3.1 3.4-8.1.8-11.6zm1.1 3.6c.6 3.8-.7 7.7-3.4 10.4-2.7 2.7-6.6 4-10.4 3.4L24 12.4z"/>
+            </svg>
+            <span class="client-logo-name">Linear</span>
+          </div>
+
+          <div class="client-logo-item" title="Vercel">
+            <svg viewBox="0 0 24 24">
+              <path d="M24 22.525H0l12-21.05 12 21.05z"/>
+            </svg>
+            <span class="client-logo-name">Vercel</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Marquee Track 2 (Reverse Direction) -->
+      <div class="marquee-track marquee-reverse">
+        <div class="marquee-group">
+          <!-- Netflix -->
+          <div class="client-logo-item" title="Netflix">
+            <svg viewBox="0 0 24 24">
+              <path d="M4 0v24c2.8-.7 5.8-1.2 8.7-1.4V0H4zm7.3 0v16.7l8.7 7.3V0h-8.7z"/>
+            </svg>
+            <span class="client-logo-name">Netflix</span>
+          </div>
+
+          <!-- Shopify -->
+          <div class="client-logo-item" title="Shopify">
+            <svg viewBox="0 0 24 24">
+              <path d="M19.7 5.2l-2.6-.7c-.1 0-.1-.1-.2-.1l-1.9-1.9c-.3-.3-.8-.5-1.2-.5H10c-.4 0-.8.2-1.1.5L7 4.4c-.1 0-.1.1-.2.1L4.3 5.2c-.7.2-1.1.8-1 1.5l1.6 14.5c.1.9.9 1.6 1.8 1.6h10.6c.9 0 1.7-.7 1.8-1.6l1.6-14.5c.1-.7-.3-1.3-1-1.5z"/>
+            </svg>
+            <span class="client-logo-name">Shopify</span>
+          </div>
+
+          <!-- Notion -->
+          <div class="client-logo-item" title="Notion">
+            <svg viewBox="0 0 24 24">
+              <path d="M4.459 4.208c.746.606 1.026.56 2.428.466l13.215-.793c.28 0 .047-.28-.093-.373L17.843.834C17.189.32 16.35.04 15.463.087L2.455.973C1.662 1.02 1.15 1.44 1.336 2.233zm1.68 4.387v12.41c0 .793.42 1.12 1.306 1.073l13.822-.84c.886-.046 1.073-.606 1.073-1.306V7.474c0-.7-.373-1.026-1.12-1.026L6.892 7.335c-.466.047-.753.373-.753.84v.42z"/>
+            </svg>
+            <span class="client-logo-name">Notion</span>
+          </div>
+
+          <!-- GitHub -->
+          <div class="client-logo-item" title="GitHub">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            <span class="client-logo-name">GitHub</span>
+          </div>
+
+          <!-- Uber -->
+          <div class="client-logo-item" title="Uber">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+            </svg>
+            <span class="client-logo-name">Uber</span>
+          </div>
+
+          <!-- Figma Community -->
+          <div class="client-logo-item" title="Figma Community">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2a5 5 0 0 1 5 5v5a5 5 0 0 1-5 5 5 5 0 0 1-5-5V7a5 5 0 0 1 5-5z"/>
+            </svg>
+            <span class="client-logo-name">Figma Community</span>
+          </div>
+        </div>
+
+        <!-- Set 2 Reverse Duplicate -->
+        <div class="marquee-group">
+          <div class="client-logo-item" title="Netflix">
+            <svg viewBox="0 0 24 24">
+              <path d="M4 0v24c2.8-.7 5.8-1.2 8.7-1.4V0H4zm7.3 0v16.7l8.7 7.3V0h-8.7z"/>
+            </svg>
+            <span class="client-logo-name">Netflix</span>
+          </div>
+
+          <div class="client-logo-item" title="Shopify">
+            <svg viewBox="0 0 24 24">
+              <path d="M19.7 5.2l-2.6-.7c-.1 0-.1-.1-.2-.1l-1.9-1.9c-.3-.3-.8-.5-1.2-.5H10c-.4 0-.8.2-1.1.5L7 4.4c-.1 0-.1.1-.2.1L4.3 5.2c-.7.2-1.1.8-1 1.5l1.6 14.5c.1.9.9 1.6 1.8 1.6h10.6c.9 0 1.7-.7 1.8-1.6l1.6-14.5c.1-.7-.3-1.3-1-1.5z"/>
+            </svg>
+            <span class="client-logo-name">Shopify</span>
+          </div>
+
+          <div class="client-logo-item" title="Notion">
+            <svg viewBox="0 0 24 24">
+              <path d="M4.459 4.208c.746.606 1.026.56 2.428.466l13.215-.793c.28 0 .047-.28-.093-.373L17.843.834C17.189.32 16.35.04 15.463.087L2.455.973C1.662 1.02 1.15 1.44 1.336 2.233zm1.68 4.387v12.41c0 .793.42 1.12 1.306 1.073l13.822-.84c.886-.046 1.073-.606 1.073-1.306V7.474c0-.7-.373-1.026-1.12-1.026L6.892 7.335c-.466.047-.753.373-.753.84v.42z"/>
+            </svg>
+            <span class="client-logo-name">Notion</span>
+          </div>
+
+          <div class="client-logo-item" title="GitHub">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            <span class="client-logo-name">GitHub</span>
+          </div>
+
+          <div class="client-logo-item" title="Uber">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+            </svg>
+            <span class="client-logo-name">Uber</span>
+          </div>
+
+          <div class="client-logo-item" title="Figma Community">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2a5 5 0 0 1 5 5v5a5 5 0 0 1-5 5 5 5 0 0 1-5-5V7a5 5 0 0 1 5-5z"/>
+            </svg>
+            <span class="client-logo-name">Figma Community</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Live Playground Section -->
+  <section class="teaser-section" id="live-playground">
+    <div class="container">
+      <div class="teaser-box tilt-card reveal-on-scroll">
+        <div>
+          <div class="section-pill">Interactive Demo</div>
+          <h2 style="font-size: 2.2rem; font-weight: 800; margin-bottom: 1rem; line-height: 1.2;">
+            Test Drive The Kit<br>
+            <span class="gradient-text">Right in Your Browser</span>
+          </h2>
+          <p style="color: var(--text-muted); font-size: 1.05rem; margin-bottom: 2rem;">
+            Experience how our token architecture syncs variables across UI states in real time. Try tweaking the brand color and container alignment:
+          </p>
+
+          <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+            <div>
+              <label style="font-size: 0.85rem; font-weight: 600; color: var(--text-muted); display: block; margin-bottom: 0.5rem;">
+                Tweak Primary Token Color:
+              </label>
+              <input type="color" id="teaserColorPicker" value="#A259FF" style="width: 60px; height: 38px; cursor: pointer; border-radius: 8px; border: 1px solid var(--border-subtle); background: none;">
+            </div>
+
+            <div>
+              <label style="font-size: 0.85rem; font-weight: 600; color: var(--text-muted); display: block; margin-bottom: 0.5rem;">
+                Auto Layout Resizing Mode:
+              </label>
+              <div style="display: flex; gap: 0.5rem;">
+                <button class="nav-cta teaser-layout-btn" data-mode="hug" style="padding: 0.4rem 0.9rem; font-size: 0.8rem; background: var(--bg-surface-elevated); border: 1px solid var(--border-subtle);">Hug</button>
+                <button class="nav-cta teaser-layout-btn active" data-mode="fill" style="padding: 0.4rem 0.9rem; font-size: 0.8rem; background: var(--bg-surface-elevated); border: 1px solid var(--border-subtle);">Fill</button>
+                <button class="nav-cta teaser-layout-btn" data-mode="center" style="padding: 0.4rem 0.9rem; font-size: 0.8rem; background: var(--bg-surface-elevated); border: 1px solid var(--border-subtle);">Center</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Live Teaser Preview Card -->
+        <div class="teaser-mockup">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem;">
+            <span id="teaserCardBadge" style="font-size: 0.75rem; font-weight: 700; color: var(--figma-purple); border: 1px solid var(--figma-purple); padding: 0.2rem 0.6rem; border-radius: 999px;">
+              Live Component Preview
+            </span>
+            <span style="font-size: 0.75rem; color: var(--text-dim); font-family: var(--font-mono);">Shift + A</span>
+          </div>
+
+          <h4 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem;">Interactive Design Card</h4>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+            This component dynamically recalculates token CSS custom properties and flexbox bounds.
+          </p>
+
+          <div id="teaserComponentRow" style="display: flex; gap: 0.75rem; width: 100%; transition: all 0.3s ease;">
+            <button id="teaserCardButton" style="background: var(--figma-purple); color: #fff; border: none; padding: 0.7rem 1.4rem; border-radius: 8px; font-weight: 700; cursor: pointer; transition: background 0.2s;">
+              Dynamic Action
+            </button>
+            <div style="background: var(--bg-surface-elevated); border: 1px solid var(--border-subtle); padding: 0.7rem 1rem; border-radius: 8px; font-size: 0.85rem; font-family: var(--font-mono); color: var(--text-muted);">
+              tokens.json &bull; sync
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bento Grid: What's Inside -->
+  <section class="bento-section" id="whats-inside">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <div class="section-pill">The Complete Lead Magnet Bundle</div>
+        <h2 class="section-title">Everything Built Into The Master Kit</h2>
+        <p class="section-subtitle">
+          Engineered for high-performing design systems teams and marketing leaders.
+        </p>
+      </div>
+
+      <div class="bento-grid">
+
+        <!-- Card 1 (Span 2): The 60-Point Audit Matrix -->
+        <div class="bento-card bento-span-2 tilt-card reveal-on-scroll stagger-1">
+          <div>
+            <div class="bento-icon-wrapper icon-purple">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 11l3 3L22 4"></path>
+                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+              </svg>
+            </div>
+            <h3>The <span class="stat-counter" data-target="60" data-suffix="-Point">60-Point</span> Production Readiness Audit Matrix</h3>
+            <p>
+              An interactive scoring tool covering Auto Layout integrity, variable aliasing, WCAG contrast compliance, and naming conventions. Calculate your score in real time and export markdown handoff reports.
+            </p>
+          </div>
+          <div style="margin-top: 1.5rem; display: flex; gap: 0.6rem; flex-wrap: wrap;">
+            <span class="token-pill">Auto Layout Verification</span>
+            <span class="token-pill">WCAG AA Contrast</span>
+            <span class="token-pill">Tokens Parity</span>
+            <span class="token-pill">Exportable as CSV & MD</span>
+          </div>
+        </div>
+
+        <!-- Card 2: Live Design Token Exporter -->
+        <div class="bento-card tilt-card reveal-on-scroll stagger-2">
+          <div>
+            <div class="bento-icon-wrapper icon-green">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <h3>W3C Design Token Engine</h3>
+            <p>
+              Pre-built token architecture supporting Tokens Studio, CSS Custom Properties, and Tailwind configuration. Never manually copy hex codes again.
+            </p>
+          </div>
+          <div style="margin-top: 1.5rem;">
+            <span class="token-pill" style="color: var(--figma-green)">Includes figma-tokens.json</span>
+          </div>
+        </div>
+
+        <!-- Card 3: Auto Layout 5.0 Visual Rules -->
+        <div class="bento-card tilt-card reveal-on-scroll stagger-3">
+          <div>
+            <div class="bento-icon-wrapper icon-blue">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="3" y1="9" x2="21" y2="9"></line>
+                <line x1="9" y1="21" x2="9" y2="9"></line>
+              </svg>
+            </div>
+            <h3>Auto Layout 5.0 Codex</h3>
+            <p>
+              Visual diagrams demonstrating Hug vs Fill, min/max dimension boundaries, flex wrap, and negative spacing for avatar stacks.
+            </p>
+          </div>
+          <div style="margin-top: 1.5rem;">
+            <span class="token-pill">Flexbox Mental Model</span>
+          </div>
+        </div>
+
+        <!-- Card 4 (Span 2): Dev Mode Handoff Blueprint -->
+        <div class="bento-card bento-span-2 tilt-card reveal-on-scroll stagger-4">
+          <div>
+            <div class="bento-icon-wrapper icon-orange">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+            </div>
+            <h3>Enterprise Handoff & Component Properties Guide</h3>
+            <p>
+              Eliminate massive combinatorial variant bloat. Learn how boolean, instance swap, and text properties condense 96 separate button variants down into a single clean component set.
+            </p>
+          </div>
+          <div style="margin-top: 1.5rem; display: flex; gap: 0.6rem; flex-wrap: wrap;">
+            <span class="token-pill">Component Props</span>
+            <span class="token-pill">Dev Mode Annotations</span>
+            <span class="token-pill">Clean SVG Exports</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Matrix Section -->
+  <section class="comparison-section reveal-on-scroll" id="comparison">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-pill">Why It Matters</div>
+        <h2 class="section-title">The Real Cost of Messy Figma Files</h2>
+        <p class="section-subtitle">
+          See the difference between uncontrolled design files and a disciplined Figma architecture.
+        </p>
+      </div>
+
+      <table class="comparison-table tilt-card">
+        <thead>
+          <tr>
+            <th>Design Characteristic</th>
+            <th>Without Master Kit (The Chaos)</th>
+            <th>With Master Kit (Enterprise Grade)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Color Management</strong></td>
+            <td class="col-chaos">48 detached hex codes, broken shades</td>
+            <td class="col-pro">100% Variable Aliases & Dark Mode Sync</td>
+          </tr>
+          <tr>
+            <td><strong>Responsiveness</strong></td>
+            <td class="col-chaos">Manual dragging, overlapping layers</td>
+            <td class="col-pro">Pure Auto Layout with Min/Max Clamps</td>
+          </tr>
+          <tr>
+            <td><strong>Developer Handoff</strong></td>
+            <td class="col-chaos">Endless Slack ping-pongs over padding</td>
+            <td class="col-pro">1-Click Dev Mode Annotations & Tokens JSON</td>
+          </tr>
+          <tr>
+            <td><strong>Accessibility (WCAG)</strong></td>
+            <td class="col-chaos">Unchecked contrast, missing focus rings</td>
+            <td class="col-pro">Guaranteed 4.5:1+ WCAG AA Contrast Audit</td>
+          </tr>
+          <tr>
+            <td><strong>Component Variants</strong></td>
+            <td class="col-chaos">Gigantic 96-variant combinatorial grids</td>
+            <td class="col-pro">Streamlined Boolean & Instance-Swap Props</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Wall of Love (Testimonials) -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <div class="section-pill">Wall of Love</div>
+        <h2 class="section-title">Loved by Thousands of Creators</h2>
+        <p class="section-subtitle">Read what product leaders say after implementing the kit.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card tilt-card reveal-on-scroll stagger-1">
+          <p class="testimonial-quote">
+            "This lead magnet completely overhauled our design team. The 60-point audit checklist alone saved us over 14 hours of rework during our latest sprint handoff."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-pic">MK</div>
+            <div>
+              <div class="author-name">Marcus Kim</div>
+              <div class="author-role">Staff Product Designer @ FinTech Unicorn</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card tilt-card reveal-on-scroll stagger-2">
+          <p class="testimonial-quote">
+            "As a frontend engineer, receiving files prepared with this token structure is a dream. The variables in Figma match our Tailwind config 1:1."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-pic" style="color: var(--figma-green);">SL</div>
+            <div>
+              <div class="author-name">Sarah Lin</div>
+              <div class="author-role">Principal Engineer @ SaaS Platform</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card tilt-card reveal-on-scroll stagger-3">
+          <p class="testimonial-quote">
+            "The Auto Layout cheatsheet and negative spacing techniques clarified constraints for our entire junior team in one afternoon. Cannot recommend this enough."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-pic" style="color: var(--figma-blue);">DV</div>
+            <div>
+              <div class="author-name">David Vance</div>
+              <div class="author-role">Head of Design @ Agency Lab</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Accordion -->
+  <section class="faq-section reveal-on-scroll" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-pill">Got Questions?</div>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Is this lead magnet really 100% free?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            Yes! You get unrestricted, lifetime access to the interactive playbook, the downloadable Figma Design Tokens JSON file, and the 60-Point Audit Checklist CSV.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Does this work with Figma's free tier?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            Absolutely. Every technique, Auto Layout rule, component property formula, and variable principle works seamlessly within Figma's free starter plan.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How do I import the JSON tokens into Figma?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            You can import the provided <code>figma-tokens-starter.json</code> directly using the popular Tokens Studio plugin or Figma's native REST API / Variables sync tool.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can I customize the tokens for my own brand?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            Yes! The interactive playbook contains a live token engine where you can input your brand color, border radiuses, and base grid spacing, then copy the tailored CSS, Tailwind, or JSON immediately.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom CTA Banner with Animated Border -->
+  <section class="bottom-cta-section reveal-on-scroll">
+    <div class="container">
+      <div class="cta-banner-card animated-glow-border tilt-card">
+        <h2 style="font-size: 2.8rem; font-weight: 800; margin-bottom: 1rem; line-height: 1.15;">
+          Ready to Master Figma Production?
+        </h2>
+        <p style="font-size: 1.15rem; color: var(--text-muted); max-width: 650px; margin: 0 auto 2.5rem;">
+          Join <span class="stat-counter" data-target="42000" data-suffix="+">42,000+</span> designers. Claim your free Lead Magnet package right now and start shipping bulletproof design systems today.
+        </p>
+
+        <div class="hero-form-wrapper">
+          <form class="lead-capture-form" id="bottomLeadForm">
+            <input 
+              type="email" 
+              class="lead-input" 
+              placeholder="Enter your work email address" 
+              required
+              aria-label="Work Email Address"
+            >
+            <button type="submit" class="lead-btn">
+              <span>Claim The Master Kit</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div style="display: flex; align-items: center; gap: 0.75rem;">
+        <span style="font-weight: 700; color: #fff;">Figma Production Kit</span>
+        <span>&bull; Made for Marketing Class & Design Systems Engineers</span>
+      </div>
+      <div>
+        <span>&copy; 2026 Figma Architect Lab. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lead Capture Success Modal -->
+  <div class="modal-overlay" id="successModal">
+    <div class="modal-content">
+      <button class="modal-close-btn close-modal-trigger">&times;</button>
+      
+      <div class="celebration-icon">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+      </div>
+
+      <h3 style="font-size: 1.7rem; font-weight: 800; margin-bottom: 0.5rem;">
+        You're In! Welcome to the Masterclass 🎉
+      </h3>
+      <p style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 2rem;">
+        We've sent your license and download confirmation to <strong id="userEmailDisplay" style="color: #fff;">your email</strong>. You can also download your files directly below or launch the interactive playbook immediately:
+      </p>
+
+      <div style="display: flex; flex-direction: column; gap: 0.85rem;">
+        <a href="figma-master-kit-website.zip" download class="btn btn-primary" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.85rem; font-size: 0.95rem; text-decoration: none; background: linear-gradient(135deg, var(--figma-green) 0%, #059669 100%); color: #0d0e12; font-weight: 700;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>📦 Download Complete Website & Lead Magnet (.ZIP)</span>
+        </a>
+
+        <a href="lead-magnet/index.html" class="nav-cta" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.85rem; font-size: 0.95rem; text-decoration: none;">
+          <span>🚀 Launch Interactive Architect Playbook</span>
+        </a>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+          <a href="lead-magnet/figma-tokens-starter.json" download class="btn btn-secondary" style="background: var(--bg-surface-elevated); border: 1px solid var(--border-subtle); color: #fff; padding: 0.75rem; border-radius: 8px; text-decoration: none; font-size: 0.85rem; display: flex; align-items: center; justify-content: center; gap: 0.4rem;">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            Tokens (.JSON)
+          </a>
+
+          <a href="lead-magnet/figma-audit-checklist.csv" download class="btn btn-secondary" style="background: var(--bg-surface-elevated); border: 1px solid var(--border-subtle); color: #fff; padding: 0.75rem; border-radius: 8px; text-decoration: none; font-size: 0.85rem; display: flex; align-items: center; justify-content: center; gap: 0.4rem;">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+            </svg>
+            Checklist (.CSV)
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Marketing Class Live Leads Drawer (Demo Feature) -->
+  <button class="leads-drawer-trigger" id="leadsDrawerOpenBtn" title="View captured emails for marketing demonstration">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--figma-purple)" stroke-width="2.5">
+      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+      <circle cx="9" cy="7" r="4"></circle>
+      <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+      <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+    </svg>
+    <span>Leads Captured:</span>
+    <strong id="leadsCountBadge" style="color: #fff;">0</strong>
+  </button>
+
+  <aside class="leads-drawer" id="leadsDrawer">
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <div>
+        <h4 style="font-size: 1.15rem; font-weight: 700;">Captured Leads</h4>
+        <span style="font-size: 0.75rem; color: var(--text-muted);">Marketing Class Live CRM</span>
+      </div>
+      <button id="leadsDrawerCloseBtn" style="background: none; border: none; color: var(--text-muted); cursor: pointer; font-size: 1.4rem;">&times;</button>
+    </div>
+
+    <div class="leads-list" id="leadsListContainer">
+      <!-- Populated dynamically by script.js -->
+    </div>
+
+    <div style="display: flex; gap: 0.75rem;">
+      <button class="btn btn-secondary" id="exportCsvBtn" style="flex: 1; font-size: 0.8rem; padding: 0.6rem;">
+        Export CSV
+      </button>
+      <button class="btn btn-secondary" id="clearLeadsBtn" style="font-size: 0.8rem; padding: 0.6rem; color: var(--figma-red);">
+        Clear All
+      </button>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>

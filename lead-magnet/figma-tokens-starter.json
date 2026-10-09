@@ -1,0 +1,96 @@
+{
+  "version": "1.0.0",
+  "name": "Figma Master Tokens Starter Kit",
+  "description": "Production-grade design tokens for Figma, Tokens Studio, and Design-to-Code pipelines.",
+  "author": "Figma Masterclass & Design Systems Lab",
+  "color": {
+    "brand": {
+      "figma-purple": { "value": "#A259FF", "type": "color", "description": "Figma primary brand accent" },
+      "figma-blue": { "value": "#1ABCFE", "type": "color", "description": "Figma cyan/blue accent" },
+      "figma-green": { "value": "#0ACF83", "type": "color", "description": "Figma green accent" },
+      "figma-orange": { "value": "#FF7262", "type": "color", "description": "Figma coral/orange accent" },
+      "figma-red": { "value": "#F24E1E", "type": "color", "description": "Figma secondary red accent" }
+    },
+    "neutral": {
+      "900": { "value": "#0D0D0E", "type": "color", "description": "Canvas primary background" },
+      "800": { "value": "#18191B", "type": "color", "description": "Card background surface" },
+      "700": { "value": "#26282B", "type": "color", "description": "Border and separator" },
+      "600": { "value": "#383A40", "type": "color", "description": "Muted elements" },
+      "400": { "value": "#8E929E", "type": "color", "description": "Secondary copy text" },
+      "200": { "value": "#D8DAE0", "type": "color", "description": "Light borders & soft text" },
+      "100": { "value": "#F3F4F6", "type": "color", "description": "Light background highlight" },
+      "0": { "value": "#FFFFFF", "type": "color", "description": "Absolute white" }
+    },
+    "semantic": {
+      "success": { "value": "#0ACF83", "type": "color" },
+      "warning": { "value": "#F59E0B", "type": "color" },
+      "danger": { "value": "#EF4444", "type": "color" },
+      "info": { "value": "#3B82F6", "type": "color" }
+    }
+  },
+  "spacing": {
+    "none": { "value": "0px", "type": "spacing" },
+    "2xs": { "value": "2px", "type": "spacing" },
+    "xs": { "value": "4px", "type": "spacing" },
+    "sm": { "value": "8px", "type": "spacing" },
+    "md": { "value": "12px", "type": "spacing" },
+    "lg": { "value": "16px", "type": "spacing" },
+    "xl": { "value": "24px", "type": "spacing" },
+    "2xl": { "value": "32px", "type": "spacing" },
+    "3xl": { "value": "48px", "type": "spacing" },
+    "4xl": { "value": "64px", "type": "spacing" }
+  },
+  "borderRadius": {
+    "none": { "value": "0px", "type": "borderRadius" },
+    "sm": { "value": "4px", "type": "borderRadius" },
+    "md": { "value": "8px", "type": "borderRadius" },
+    "lg": { "value": "12px", "type": "borderRadius" },
+    "xl": { "value": "16px", "type": "borderRadius" },
+    "2xl": { "value": "24px", "type": "borderRadius" },
+    "full": { "value": "9999px", "type": "borderRadius" }
+  },
+  "typography": {
+    "fontFamily": {
+      "sans": { "value": "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif", "type": "fontFamilies" },
+      "mono": { "value": "'JetBrains Mono', 'Fira Code', monospace", "type": "fontFamilies" }
+    },
+    "fontSize": {
+      "xs": { "value": "12px", "type": "fontSizes" },
+      "sm": { "value": "14px", "type": "fontSizes" },
+      "base": { "value": "16px", "type": "fontSizes" },
+      "lg": { "value": "18px", "type": "fontSizes" },
+      "xl": { "value": "20px", "type": "fontSizes" },
+      "2xl": { "value": "24px", "type": "fontSizes" },
+      "3xl": { "value": "30px", "type": "fontSizes" },
+      "4xl": { "value": "36px", "type": "fontSizes" },
+      "5xl": { "value": "48px", "type": "fontSizes" }
+    },
+    "lineHeight": {
+      "tight": { "value": "1.15", "type": "lineHeights" },
+      "normal": { "value": "1.5", "type": "lineHeights" },
+      "relaxed": { "value": "1.65", "type": "lineHeights" }
+    }
+  },
+  "shadows": {
+    "card": {
+      "value": {
+        "x": "0px",
+        "y": "4px",
+        "blur": "20px",
+        "spread": "0px",
+        "color": "rgba(0, 0, 0, 0.45)"
+      },
+      "type": "boxShadow"
+    },
+    "elevated": {
+      "value": {
+        "x": "0px",
+        "y": "12px",
+        "blur": "36px",
+        "spread": "-4px",
+        "color": "rgba(162, 89, 255, 0.25)"
+      },
+      "type": "boxShadow"
+    }
+  }
+}

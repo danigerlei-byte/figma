@@ -1,0 +1,14 @@
+{
+  "name": "figma-master-kit-landing-page",
+  "version": "1.0.0",
+  "description": "High-converting Figma landing page and automated lead magnet email system",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0",
+    "resend": "^4.0.0"
+  }
+}
