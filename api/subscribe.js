@@ -70,41 +70,54 @@ export default async function handler(req, res) {
         await resend.emails.send({
           from: fromEmail,
           to: cleanEmail,
-          subject: '🚀 Your Figma Production Architect Kit & Lead Magnet',
-        html: `
-          <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 600px; margin: 0 auto; padding: 32px 24px; background: #0D0E12; color: #F3F4F8; border-radius: 16px;">
+          subject: '📖 Your Copy: Design Principles in Figma (Field Guide)',
+          html: `
+          <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 600px; margin: 0 auto; padding: 32px 24px; background: #161720; color: #F3F4F8; border-radius: 16px; border: 1px solid rgba(255,255,255,0.1);">
             <div style="margin-bottom: 24px; text-align: center;">
-              <span style="background: rgba(162, 89, 255, 0.2); color: #A259FF; font-size: 12px; font-weight: 700; padding: 4px 12px; border-radius: 999px; text-transform: uppercase;">
-                Figma Architect Kit &bull; 2026 Edition
+              <span style="background: rgba(255, 95, 56, 0.15); color: #FF5F38; font-size: 12px; font-weight: 700; padding: 4px 12px; border-radius: 999px; text-transform: uppercase; letter-spacing: 0.15em;">
+                A Practical Field Guide &bull; October 2026
               </span>
             </div>
 
-            <h1 style="color: #FFFFFF; font-size: 26px; font-weight: 800; line-height: 1.2; margin-bottom: 12px; text-align: center;">
-              Welcome to the Masterclass! 🎉
+            <h1 style="color: #FFFFFF; font-size: 28px; font-weight: 800; line-height: 1.2; margin-bottom: 12px; text-align: center;">
+              Design Principles in Figma.
             </h1>
-            <p style="font-size: 16px; line-height: 1.6; color: #9AA0B6; text-align: center; margin-bottom: 32px;">
-              Thank you for requesting access. Here is your complete production toolkit to build design systems 10x faster with zero developer handoff chaos.
+            <p style="font-size: 16px; line-height: 1.6; color: #A0A5BA; text-align: center; margin-bottom: 32px;">
+              Eight principles that make interfaces clear, calm and usable — and the exact Figma features that turn each one into a habit.
             </p>
 
             <div style="text-align: center; margin-bottom: 32px;">
-              <a href="${baseUrl}/lead-magnet/index.html" style="background: linear-gradient(135deg, #A259FF 0%, #7B2CBF 100%); color: #FFFFFF; padding: 16px 32px; border-radius: 10px; text-decoration: none; font-weight: 700; font-size: 16px; display: inline-block; box-shadow: 0 4px 20px rgba(162, 89, 255, 0.4);">
-                🚀 Launch Interactive Architect Playbook
+              <a href="${baseUrl}/lead-magnet/design-principles-in-figma.html" style="background: #FF5F38; color: #FFFFFF; padding: 16px 32px; border-radius: 10px; text-decoration: none; font-weight: 800; font-size: 16px; display: inline-block; box-shadow: 0 4px 20px rgba(255, 95, 56, 0.4);">
+                📖 Open & Read 12-Page Field Guide →
               </a>
             </div>
 
-            <div style="background: #181922; border: 1px solid #272B3A; border-radius: 12px; padding: 20px; margin-bottom: 32px;">
-              <h3 style="margin-top: 0; color: #0ACF83; font-size: 16px; margin-bottom: 12px;">
-                📦 Direct Downloads & Resources:
+            <div style="background: #1F202C; border: 1px solid #2B2C3C; border-radius: 12px; padding: 20px; margin-bottom: 32px;">
+              <h3 style="margin-top: 0; color: #19B875; font-size: 16px; margin-bottom: 12px;">
+                ✨ What’s inside your field guide:
               </h3>
-              <ul style="color: #D8DAE0; padding-left: 20px; line-height: 2; margin: 0;">
-                <li><a href="${baseUrl}/lead-magnet/figma-tokens-starter.json" style="color: #1ABCFE; text-decoration: none; font-weight: 600;">Download Design Tokens Starter (.JSON)</a></li>
-                <li><a href="${baseUrl}/lead-magnet/figma-audit-checklist.csv" style="color: #1ABCFE; text-decoration: none; font-weight: 600;">Download 60-Point Audit Matrix (.CSV)</a></li>
-                <li><a href="${baseUrl}/figma-master-kit-website.zip" style="color: #1ABCFE; text-decoration: none; font-weight: 600;">Download Full Website & Asset Bundle (.ZIP)</a></li>
+              <ul style="color: #D8DAE0; padding-left: 20px; line-height: 2; margin: 0; font-size: 14px;">
+                <li><strong>01 Visual hierarchy</strong> &bull; Size, weight, color, position, space</li>
+                <li><strong>02 Alignment & grids</strong> &bull; Layout grids, Auto layout, constraints</li>
+                <li><strong>03 Spacing & proximity</strong> &bull; 8-point scale & spacing variables</li>
+                <li><strong>04 Contrast & color</strong> &bull; 60-30-10 rule, WCAG AA, color tokens</li>
+                <li><strong>05 Typography</strong> &bull; Type scale &times;1.25 & text styles</li>
+                <li><strong>06 Consistency</strong> &bull; Components, properties & team libraries</li>
+                <li><strong>07 Balance & whitespace</strong> &bull; Focus & progressive disclosure</li>
+                <li><strong>08 Feedback & affordance</strong> &bull; States & interactive components</li>
+                <li><strong>✓ The Nine-Point Pre-Share Checklist</strong> &bull; Run before you share</li>
+                <li><strong>⚡ Shortcuts Worth Memorizing</strong> &bull; Quick actions reference</li>
               </ul>
             </div>
 
-            <p style="font-size: 12px; color: #60667E; border-top: 1px solid #232738; padding-top: 20px; text-align: center; margin: 0;">
-              Sent with love &bull; Figma Masterclass Marketing Lab &bull; No spam guaranteed.
+            <div style="text-align: center; margin-bottom: 24px;">
+              <a href="${baseUrl}/figma-master-kit-website.zip" style="color: #7053FF; text-decoration: none; font-weight: 700; font-size: 14px;">
+                📦 Download Complete Website & Playbook Bundle (.ZIP)
+              </a>
+            </div>
+
+            <p style="font-size: 12px; color: #72778E; border-top: 1px solid #282937; padding-top: 20px; text-align: center; margin: 0;">
+              Sent with love &bull; Design Principles in Figma &bull; Free Field Guide.
             </p>
           </div>
         `
